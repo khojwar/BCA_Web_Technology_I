@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Nested Framesets in HTML</title> 
+</head> 
+
+<!-- Frameset tag starts from here -->
+
+<!-- We divide the whole website into three rows -->
+<!-- "*" divides equally based on the left space -->
+<frameset rows="33%, 33%, 34%"> 
+
+	<!-- Here we are defining the columns 
+		in the first row -->
+	<!-- It is set to 100% which means that 
+		it will cover first row by 100% -->
+	<frameset cols="100%"> 
+
+		<!-- Defining the frame which is 
+			to be inserted -->
+		<frame name="frame1" src="2.6.4-checkbox-control.html"> 
+
+	</frameset> 
+
+	<!-- Here we are defining the columns 
+		in the second row -->
+	<frameset cols="*, *, *"> 
+		<frame name="frame2" src="2.6.13-disabled.html"> 
+		<frame name="frame3" src="2.6.13-disabled.html"> 
+		<frame name="frame4" src="2.6.13-disabled.html"> 
+	</frameset> 
+
+	<!-- Now the final third row which will 
+		cover the rest space -->
+	<frame name="frame5" src="2.6.5-radio-control.html"> 
+
+</frameset> 
+<!-- frameset tag ends here -->
+
+</html>

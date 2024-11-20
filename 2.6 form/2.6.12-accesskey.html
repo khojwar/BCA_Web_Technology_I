@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<a id="myid" accesskey="g" href="https://www.google.com/">Google</a>
+<p>Get the accessKey</p>
+<button onclick="display()">Click and display the accesskey</button>
+<p id="pid"></p>
+<script>
+function display() {
+   var a = document.getElementById("myid").accessKey;
+      document.getElementById("pid").innerHTML = a;
+   }
+</script>
+</body>
+</html>

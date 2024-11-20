@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+          
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        thead {
+            background-color: #f2f2f2;
+            font-weight: bold;
+          }
+          
+          tfoot {
+            background-color: #e0e0e0;
+            font-weight: bold;
+          }
+          
+          tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+          }
+          
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Grouping sections of a table is a method used in HTML to organize table content and improve readability, both visually and semantically. It involves dividing a table into logical sections such as headers, body, and footers using the following tags:
+
+    # Key Table Section Tags
+    1. <thead>
+    Represents the header section of the table.
+    Contains column headings and descriptive information.
+    
+    2. <tbody>
+    Represents the main body of the table.
+    Contains the primary data rows.
+    
+    3. <tfoot>
+    Represents the footer section of the table.
+    Typically used for summary rows, totals, or additional notes.
+    
+    ## Benefits of Grouping
+    * Improves table structure and readability.
+    * Enhances accessibility for screen readers.
+    * Allows easy styling of specific sections using CSS.
+    * Useful for large tables where fixed headers/footers need to be implemented.
+     -->
+
+     <table border="1">
+        <!-- Table Header -->
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        
+        <!-- Table Body -->
+        <tbody>
+          <tr>
+            <td>Apples</td>
+            <td>10</td>
+            <td>$15</td>
+          </tr>
+          <tr>
+            <td>Bananas</td>
+            <td>5</td>
+            <td>$10</td>
+          </tr>
+        </tbody>
+        
+        <!-- Table Footer -->
+        <tfoot>
+          <tr>
+            <td colspan="2">Total</td>
+            <td>$25</td>
+          </tr>
+        </tfoot>
+      </table>
+      
+
+  </body>
+</html>

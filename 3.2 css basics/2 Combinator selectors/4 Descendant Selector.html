@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title> Descendant Selector </title>  
+<style>  
+    body{  
+        text-align: center;  
+    } 
+
+    /* Descendant selector */
+    /* It selects all the elements that are descendants of a specified element */
+    div p{  
+        color: blue;  
+        font-size:28px;  
+        font-weight: bold;  
+        text-align: center;  
+    }
+
+    p, div {  
+        font-size: 25px;  
+    }  
+</style>  
+</head>  
+  
+<body>  
+    <div>  
+        <p> This is 1st paragraph in the div. </p>  
+        <p> This is 2nd paragraph in the div. </p>  
+        <span>  
+            This is the span element in the div  
+            <p> This is the paragraph in the span. It will also be affected. </p>  
+        </span>  
+    </div>  
+    
+    <p> Paragraph 4. It will not be affected because it is not in the div. </p>  
+  
+</body>  
+</html>  

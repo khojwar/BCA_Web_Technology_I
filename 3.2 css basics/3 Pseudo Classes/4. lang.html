@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>  
+ <html>  
+  <head>  
+    <style>  
+        body{  
+            text-align:center;  
+        }  
+
+        /* :lang pseudo class is used to select the element with the specified language. */
+        p:lang(fr)   /* Selects all <p> elements with a lang attribute equal to "fr" (French). */
+        {  
+            font-family:Verdana;  
+            color:blue;    
+        }  
+   </style>  
+ </head>  
+<body>  
+    
+  <p>Without :lang pseudo class</p>  
+  <p lang="fr">With :lang pseudo class with the value fr</p>  
+
+  <!-- 
+    The first paragraph (Without :lang pseudo class) will appear in the default font and color (typically black).
+    The second paragraph (With :lang pseudo class with the value fr) will appear in blue and use the Verdana font.
+ -->
+</body>  
+</html>   

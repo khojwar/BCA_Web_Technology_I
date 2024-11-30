@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* General styling for the wrapper container */
+        .wrapper {
+            display: flex; /* Enables flexbox for layout control */
+            flex-flow: row wrap; /* Positions items in a row and wraps them if needed */
+            font-weight: bold; /* Makes text bold */
+            text-align: center; /* Centers text in all child elements */
+        }
+        
+        /* Applies styles to all direct child elements of the wrapper */
+        .wrapper > * {
+            padding: 10px; /* Adds padding around child elements */
+            flex: 1 100%; /* Makes each child take up 100% width initially */
+        }
+        
+        /* Styling for the header section */
+        .header {
+            background: tomato; /* Sets a red-orange background color */
+        }
+        
+        /* Styling for the footer section */
+        .footer {
+            background: lightgreen; /* Sets a light green background color */
+        }
+        
+        /* Styling for the main content section */
+        .main {
+            text-align: left; /* Aligns text to the left */
+            background: deepskyblue; /* Sets a blue background color */
+        }
+        
+        /* Styling for the first aside section */
+        .aside-1 {
+            background: gold; /* Sets a golden background color */
+        }
+        
+        /* Styling for the second aside section */
+        .aside-2 {
+            background: hotpink; /* Sets a pink background color */
+        }
+        
+        /* Media query for screens with a minimum width of 600px */
+        @media all and (min-width: 600px) {
+            .aside {
+            flex: 1 0 0; /* Gives the aside sections equal width, as much as needed */
+            }
+        }
+        
+        /* Media query for screens with a minimum width of 800px */
+        @media all and (min-width: 800px) {
+            .main {
+            flex: 3 0px; /* Makes the main section three times wider than the asides */
+            }
+            .aside-1 {
+            order: 1; /* Positions aside-1 as the first item */
+            }
+            .main {
+            order: 2; /* Positions the main section as the second item */
+            }
+            .aside-2 {
+            order: 3; /* Positions aside-2 as the third item */
+            }
+            .footer {
+            order: 4; /* Positions the footer as the last item */
+            }
+        }
+        
+        /* General styling for the body element */
+        body {
+            padding: 2em; /* Adds padding around the entire body content */
+        }
+  
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">Header</header>
+        <article class="main">
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+        </article>
+        <aside class="aside aside-1">Aside 1</aside>
+        <aside class="aside aside-2">Aside 2</aside>
+        <footer class="footer">Footer</footer>
+      </div>
+</body>
+</html>

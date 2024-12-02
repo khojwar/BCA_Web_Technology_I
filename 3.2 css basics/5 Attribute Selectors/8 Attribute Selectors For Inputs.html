@@ -1,0 +1,40 @@
+<html>
+<head>
+    <style>
+        /* Applies to all input tags */
+        input {
+            display: block;
+            margin: 10px;
+            padding: 5px;
+        }
+        /* Applies to input tags with type attribute */
+        input[type] {
+            border: 1px solid gray;
+        }
+        /* Applies to input tag with placeholder value as name */
+        input[placeholder="name"] {
+            border: 1px solid #f00;
+        }
+        /* Applies to input tags name attribute value start with "emailid" */
+        input[name|="emailid"] {
+            background-color: rgb(236, 178, 233);
+        }
+        /* Applies to input type attributes value containing "sub" string in it */
+        input[type~="sub"] {
+            background-color: rgb(88, 241, 88);
+            padding: 10px;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Username">
+    <input type="text" placeholder="name">
+    <input type="email" placeholder="Email" name="emailid">
+    <input type="submit" placeholder="Submit">
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <style>
+        /* [attribute|=value] selector */
+        /* Selects all elements with a specific attribute and value starting with the specified value */
+        /* The value can be either exactly the value or immediately followed by a hyphen (-) */
+        /* This is useful for language subcodes */
+        /* For example, [lang|="en"] will select elements with lang attribute value of "en" or "en-US" or "en-GB" */
+        /* It will also not select elements with lang attribute value of "en-US-GB" */
+        [lang|="en"] {
+            background: lightgray;
+            padding: 10px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div lang="en"> This is a div in English! </div>
+    <p lang="en-US"> This paragraph is in American English. </p>
+    <p lang="en-GB"> This paragraph is in British English. </p>
+    <div lang="fr"> Bonjour tout le monde en français! </div>
+    <div lang="es"> Hola Mundo en español! </div>
+</body>
+
+</html>

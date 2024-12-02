@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+    /* Remove bullet points from list items */
+    ul {
+        list-style: none;
+    }
+
+    /* Target all anchor elements with an href attribute */
+    a[href] {
+        color: rgb(231, 11, 194);
+    }
+
+    /* Target anchor elements with both specific href values and file extension */
+    a[href="css_backgrounds.htm"][href$=".htm"] {
+        background-color: lightgray;
+        padding: 5px;
+    }
+
+    /* Target anchor elements with a specific href value */
+    a[href="css_colors.htm"] {
+        color: rgb(51, 255, 0);
+    }
+    
+    
+</style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="css_text.htm">
+            CSS Text
+        </a></li>
+        <li><a href="css_backgrounds.htm">
+            CSS Background
+        </a></li>
+        <li><a href="css_colors.htm">
+            CSS Color
+        </a></li>
+    </ul>
+</body>
+
+</html>

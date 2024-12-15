@@ -5,9 +5,9 @@
     
     /* ID selectors have a higher specificity than attribute selectors */
 
-    div#a {background-color: green;}
-    #a {background-color: yellow;}
-    div[id=a] {background-color: blue;}
+    div#a {background-color: green;}            /* 1 + 100 */
+    #a {background-color: yellow;}            /* 100 */
+    div[id=a] {background-color: blue;}         /* 1 + 10 */
 
 </style>
 </head>

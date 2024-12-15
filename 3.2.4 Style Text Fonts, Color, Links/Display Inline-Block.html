@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Inline-Block Example</title>
+    <!-- 
+    The **display: inline-block;** property in CSS is a hybrid display mode that combines features of both inline and block elements. 
+
+    # What It Does
+    A. Inline Characteristics:
+        - Elements flow inline with other elements, like inline elements (e.g., <span>).
+        - Does not break to a new line by default.
+        - Ignores width, height, margin, and padding properties.
+        - Does not allow box-model properties (like borders and spacing) to take effect.
+
+    B. Block Characteristics:
+        - Can set width, height, margin, and padding.
+        - Allows box-model properties (like borders and spacing) to take effect.
+        - Breaks to a new line by default.
+    -->
+    <style>
+        .inline-block-example {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            line-height: 100px;
+            border: 2px solid #4CAF50;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inline-block-example">Block 1</div>
+        <div class="inline-block-example">Block 2</div>
+        <div class="inline-block-example">Block 3</div>
+
+    </div>
+</body>
+</html>

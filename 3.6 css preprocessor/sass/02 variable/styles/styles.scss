@@ -1,0 +1,18 @@
+// ***********Variables***********
+// Define reusable variables for font, color, font size, and container width
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+// Apply styles to the body of the document
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+// Style the container element
+#container {
+  width: $myWidth;
+} 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    # box Model
+    The CSS box model is a container that used to structure the elements in a webpage so the element can be displayed visually good. 
+    It consists of four essential components content, padding, border, and margin.
+
+    # Types of Box-Model
+    There are two types of box models as listed below.
+        1. Standard Box Model (Content-Box)
+            total width = width + padding-left + padding-right + border-left + border-right
+            total height = height + padding-top + padding-bottom + border-top + border-bottom
+
+        2. Alternative Box Model (Border-Box)
+            total width = width
+            total height = height
+
+    -->
+    <style>
+        .box {
+            width: 300px;
+            height: 100px;
+            padding: 20px;
+            border: 10px solid black;
+            margin: 30px;
+            /* This is the default value */
+            box-sizing: content-box; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="myBox">
+      Total Width = 300 (content) + 20 (padding left) + 20 (padding right) + 10 (border left) + 10(border right) = 360 px
+    </div>
+    <p id="dis"></p>
+    
+    <script>
+        // Get the div element
+        var box = document.getElementById('myBox');
+        // Get total width of element
+        var totalWidth = box.offsetWidth;
+
+        document.getElementById('dis').innerText = 
+        'Width of the div using offsetWidth property: ' 
+        + totalWidth + 'px';
+    </script>
+</body>
+</html>

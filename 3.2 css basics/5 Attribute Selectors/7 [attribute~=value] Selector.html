@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <style>
+        /* [attribute~=value] selector */
+        /* Selects all elements with a specific attribute and value containing a specified word */
+        /* value matches attribute in space seperated list */
+
+        [class~="highlight"] {
+            background: yellow;
+            padding: 10px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="highlight"> 
+        This is a highlighted div! 
+    </div>
+    <p class="highlight special"> 
+        This paragraph is highlighted and special. 
+    </p>
+    <p class="special"> 
+        This paragraph is special but not highlighted. 
+    </p>
+    <div class="note"> 
+        This is just a note. 
+    </div>
+    <div class="highlight note"> 
+        This note is highlighted. 
+    </div>
+</body>
+
+</html> 

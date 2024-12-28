@@ -1,0 +1,22 @@
+<html>
+<head>
+  <style>
+    /* specificity*/
+
+    /*
+    In this example, we have added an inline style for the "p" element. 
+    The text will now be pink, because the inline style is given the highest priority:
+    */
+
+    /* inline style > id > class > element */
+    #demo {color: blue;}
+    .test {color: green;}
+    p {color: red;}
+  </style>
+</head>
+<body>
+
+<p id="demo" class="test" style="color: pink;">Hello World!</p>
+
+</body>
+</html>

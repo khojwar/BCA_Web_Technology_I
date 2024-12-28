@@ -1,0 +1,37 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title> Adjacent Sibling Selector </title>  
+<style>  
+body{  
+    text-align: center;  
+}  
+
+/* Adjacent sibling selector */
+/* It selects all the elements that are the adjacent siblings of a specified element */
+
+
+p + p{  
+    color: Blue;  
+    font-size:25px;  
+    font-weight: bold;  
+    text-align: center;  
+} 
+
+
+p {  
+    font-size: 32px;  
+}  
+</style>  
+</head>  
+  
+<body>  
+    <h1> Adjacent sibling selector (+) property</h1>  
+    <p> It is the first paragraph </p>  
+    <p> It is the second paragraph which is immediately next to the first paragraph, and it get selected. </p> 
+    <p> It is the third paragraph which does not get affected </p> 
+    <div> This is the div element </div>  
+    <p> This is the third paragraph which does not get affected </p>  
+    <p> This paragraph is also selected because it immediately next to third paragraph </p>  
+</body>  
+</html>  

@@ -1,0 +1,37 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title> Child Selector </title>  
+<style>  
+    body{  
+        text-align: center;  
+    }  
+    
+    /* Child selector */
+    /* It selects all the elements that are the children of a specified element */
+    /* This combinator only matches the elements that are the immediate child in the document tree. */
+    div > h1{  
+        color: Blue;  
+        font-size:25px;  
+        font-weight:bold;  
+        text-align:center;  
+    }
+
+    p {  
+        font-size: 20px;  
+    }  
+</style>  
+</head>  
+  
+<body>  
+    <h1> Child selector (>) property</h1>  
+    <p> It is the first paragraph </p>  
+    <p> It is the second paragraph </p> 
+
+    <div>  
+        <h1>This is the div element</h1>  
+        <p> This is the third paragraph which is the child of div element </p>  
+        <p> This is the fourth paragraph and also get selected because it is also the child of div element </p>  
+    </div>  
+</body>  
+</html>  

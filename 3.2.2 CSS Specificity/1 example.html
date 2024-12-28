@@ -1,0 +1,22 @@
+<html>
+<head>
+  <style>
+    /* specificity*/
+    /* 
+    we have added a class selector (named "test"), and specified a green color for this class. 
+    The text will now be green (even though we have specified a red color for the element selector "p"). 
+    This is because the class selector is given higher priority  
+    */
+
+    /* class > element */
+    .test {color: green;}
+    p {color: red;}
+
+  </style>
+</head>
+<body>
+
+<p class="test">Hello World!</p>
+
+</body>
+</html>

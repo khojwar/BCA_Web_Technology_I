@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Styling for the navigation container */
+        .navigation {
+            display: flex; /* Makes the list items a flexible container */
+            flex-flow: row wrap; /* Aligns items in a row and allows wrapping to the next line if needed */
+            justify-content: flex-end; /* Aligns the navigation items to the right */
+            
+            list-style: none; /* Removes default bullet points for the list items */
+            margin: 0; /* Removes default margin from the navigation */
+            background: deepskyblue; /* Sets the background color to deepskyblue */
+        }
+        
+        /* Styling for navigation links */
+        .navigation a {
+            text-decoration: none; /* Removes underline from links */
+            display: block; /* Makes the links block-level elements */
+            padding: 1em; /* Adds padding for spacing */
+            color: white; /* Sets the text color to white */
+        }
+        
+        /* Hover effect for navigation links */
+        .navigation a:hover {
+            background: #1565C0; /* Changes the background color when hovering over a link */
+        }
+        
+        /* Media query for devices with a maximum width of 800px */
+        @media all and (max-width: 800px) {
+            .navigation {
+            justify-content: space-around; /* Aligns items evenly with space around them */
+            }
+        }
+        
+        /* Media query for devices with a maximum width of 600px */
+        @media all and (max-width: 600px) {
+            .navigation {
+            flex-flow: column wrap; /* Stacks the navigation items in a column */
+            padding: 0; /* Removes additional padding */
+            }
+            .navigation a { 
+            text-align: center; /* Centers the text in each navigation link */
+            padding: 10px; /* Adjusts padding for smaller screens */
+            border-top: 1px solid rgba(255, 255, 255, 0.3); /* Adds a semi-transparent border on top */
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Adds a slightly dark border on the bottom */
+            }
+            .navigation li:last-of-type a {
+            border-bottom: none; /* Removes the bottom border for the last navigation item */
+            }
+        }  
+
+    </style>
+</head>
+<body>
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+</body>
+</html>

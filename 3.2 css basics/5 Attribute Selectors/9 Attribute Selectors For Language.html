@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        div[lang] {
+            color: red;
+        }
+        div[lang="fr"] {
+            color: blue;
+        }
+        div[lang~="es"] {
+            color: green;
+        }
+        div[lang|="de"] {
+            color: orange;
+        }
+        div[lang^="it"] {
+            color: purple;
+        }
+        div[lang$="ja"] {
+            color: brown;
+        }
+        div[lang*="zh"] {
+            color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div lang="en">Hello World in English!</div>
+    <div lang="fr">Bonjour tout le monde en français!</div>
+    <div lang="es">Hola Mundo en español!</div>
+    <div lang="ja">こんにちは、日本語で世界！</div>
+    <div lang="de">Hallo Welt auf Deutsch!</div>
+    <div lang="it">Ciao Mondo in italiano!</div>
+    <div lang="zh">你好世界，中文！</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+    /* ID selectors have a higher specificity than attribute selectors */
+
+    div#a {background-color: green;}            /* 1 + 100 */
+    #a {background-color: yellow;}            /* 100 */
+    div[id=a] {background-color: blue;}         /* 1 + 10 */
+
+</style>
+</head>
+<body>
+
+    <div id="a">This is a div</div>
+
+</body>
+</html>

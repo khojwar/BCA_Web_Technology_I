@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img{
+            height: 50px;
+            width: 150px;
+        }
+
+        /* [attribute$=value] selector */
+        /* Selects all elements with a specific attribute and value ending with the specified value */
+        
+        [src$=".png"] {
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Style applied to src attribute's value ends with '.png'
+    </p>
+    <img alt="Logo" src = "/images/logo.jpg" />
+    <img alt="Logo" src = "/html/images/logo.png" />
+</body>
+
+</html>

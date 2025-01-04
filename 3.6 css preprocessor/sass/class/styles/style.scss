@@ -1,0 +1,25 @@
+@import "cleaning";
+
+
+$primary-color: rgb(72, 27, 216);
+$secondary-color: rgb(255, 0, 0);
+
+
+
+h1 {
+    color: $primary-color;
+}
+@mixin flex-center($width, $color) {
+    border: $width solid $color;
+}
+
+.container {
+    
+    .box {
+        background-color: $secondary-color;
+        margin: 20px;
+        @include flex-center(2px, $primary-color);
+    }
+}
+
+

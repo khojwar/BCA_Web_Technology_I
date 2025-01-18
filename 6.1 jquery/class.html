@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p id="demo">Test</p>
+    <p>second</p>
+    <p>third</p>
+    <p>fourth</p>
+
+    <script>
+       // double click 
+       /*
+         $("p").click(function(){
+              $(this).hide();
+         });
+         */
+
+/*
+         $("p").on("click", function(){
+            $(this).hide();
+          });
+          */
+          
+          /*
+        $().on({
+            click: function(){},
+            mouseenter: function(){},
+        })
+            */
+
+            /*
+          $("p").on({
+            mouseenter: function(){
+              $(this).css("background-color", "lightgray");
+            },  
+            mouseleave: function(){
+              $(this).css("background-color", "lightblue");
+            }, 
+            click: function(){
+              $(this).css("background-color", "yellow");
+            }  
+          });
+          */
+
+          // $("#demo").append("<p>New paragraph at the end</p>");
+
+          $("#demo").addClass("highlight");
+
+          $(".highlight").css("background-color", "yellow");
+        
+    </script>
+
+
+    <!-- <script src="./class.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="demo">
+      <h2>The XMLHttpRequest Object</h2>
+      <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+    <script>
+      function loadDoc() {
+        // Create a new XMLHttpRequest object
+        const xhttp = new XMLHttpRequest();
+
+        // Define a function to execute when the request is successfully completed
+        xhttp.onload = function () {
+          // Update the HTML element with the response text from the server
+          document.getElementById("demo").innerHTML = this.responseText;
+        };
+
+        // Initialize a GET request to fetch data from the given URL
+        xhttp.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+
+        // Send the request to the server
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>
